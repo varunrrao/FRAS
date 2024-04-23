@@ -13,7 +13,7 @@ We also test the model with 5 pictures not chosen for training from the facetest
 
 Run the last block to open the webcam and recognize the trained faces. Press "q" to turn off the webcam 
 
-Detected and recognized faces from the webcam are compared with the student_database csv file and the corresponding student details are stored in the Attendance.csv file. 
+Detected and recognized faces from the webcam are compared with the Student_Database csv file and the corresponding student details are stored in the Attendance.csv file
 
 Required to install these modules before running the jupyter code
 
@@ -25,7 +25,7 @@ To install facial-recognition
 1. pip install cmake
 2. pip install dlib
 
-if it fails due to python version incompatibility,
+if it fails due to Python version incompatibility,
 pip install dlib-19.22.99-cp39-cp39-win_amd64 
 
 3. pip install face-recognition
