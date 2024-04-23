@@ -1,13 +1,19 @@
 # FRAS
 Open Notebook in jupyter
 
-Images stored in Headshots get pre processed and the resized face images are stored in Processed_Headshots
+Images stored in Headshots get pre-processed using open-cv and face-recognition
 
-Then we train the vgg16 cnn model using the Processed_Headshots folder images
+Resized 224x224 face images are stored in Processed_Headshots_Training, Processed_Headshots_Testing, Processed_Headshots_Validation according to 70-20-10 train-validation-test split respectively
+
+We augment the images present in Processed_Training_Headshots and Processed_Training_Validation
+
+Then we train the VGG16 CNN model using the Augmented folder images
 
 We also test the model with 5 pictures not chosen for training from the facetest folder.
 
-Run the last block to open webcam and recognize the trained faces. Press "q" to turn off the webcam 
+Run the last block to open the webcam and recognize the trained faces. Press "q" to turn off the webcam 
+
+Detected and recognized faces from the webcam are compared with the student_database csv file and the corresponding student details are stored in the Attendance.csv file. 
 
 Required to install these modules before running the jupyter code
 
